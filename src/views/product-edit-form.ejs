@@ -31,8 +31,8 @@
 					<div class="col-12 col-md-6">
 						<label for="category" class="form-label">Categoría:</label>
 						<select name="category" id="category" class="form-input">
-							<option value="in-sale"> <%= product.category === "in-sale" && "selected" %> En oferta</option>
-							<option value="visited"> <%= product.category === "visited" && "selected" %> Últimos agregados</option>
+							<option value="in-sale" <%= product.category === "in-sale" && "selected" %> >  En oferta</option>
+							<option value="visited" <%= product.category === "visited" && "selected" %> > Últimos agregados</option>
 						</select>
 					</div>
 					<div class="col-12">
