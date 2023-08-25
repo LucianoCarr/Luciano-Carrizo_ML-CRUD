@@ -76,7 +76,7 @@ fs.writeFileSync(productsFilePath,  JSON.stringify(products, null, 3), 'utf8')
 			product.discount = +discount;
 			product.category = category;
 			product.description = description.trim();
-			product.image = req.file ? req.file.filename : null
+			product.image = req.file ? req.file.filename : product.image
 			}
 
 			return product
